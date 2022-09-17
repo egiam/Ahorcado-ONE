@@ -56,7 +56,6 @@ const drawWord = () => {
 const endGame = () => {
     document.removeEventListener("keydown", letterEvent);
     startButton.style.display = "block";
-    startButton.innerHTML = "Jugar de nuevo";
 };
 
 const correctLetter = (letter) => {
@@ -75,7 +74,7 @@ const addBodyPart = (bodyPart) => {
     ctx.fillRect(...bodyPart);
 };
 
-const wrongLetter = (letter) => {
+const wrongLetter = () => {
     addBodyPart(bodyParts[mistakes]);
     mistakes++;
     if (mistakes === bodyParts.length) endGame();
