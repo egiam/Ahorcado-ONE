@@ -1,3 +1,8 @@
+/* cuando seleccionas, que no se muestre la palabra */
+
+
+/* user-select: none; */
+
 .hidden {
     color: transparent;
 }
@@ -10,7 +15,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 50px; */
 }
 
 #wordContainer {
@@ -21,8 +25,6 @@ body {
     margin: 0 7px;
     position: relative;
     text-align: center;
-    /* cuando seleccionas, que no se muestre la palabra */
-    user-select: none;
 }
 
 .letter::after {
