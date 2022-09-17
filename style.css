@@ -25,6 +25,8 @@ body {
     margin: 0 7px;
     position: relative;
     text-align: center;
+    /* cuando seleccionas, que no se muestre la palabra */
+    user-select: none;
 }
 
 .letter::after {
